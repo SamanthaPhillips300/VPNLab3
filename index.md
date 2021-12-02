@@ -150,7 +150,7 @@ The Wireguard VPN server is now officially setup!!!
 
 1. Run the following command:
 
-    docker-compose logs -f wireguard
+        docker-compose logs -f wireguard
     
 2. Open the Wireguard app on your phone
 3. Click the "+" button
@@ -164,25 +164,25 @@ First, download/install the Wireguard application for your computer.
 
 1. Run the following command to change directories:
 
-    cd ~/wireguard/config
+        cd ~/wireguard/config
     
 2. List the files/directories in the config directory
 
-    ls
+        ls
    
 3. Decide which PEER option you want to use to set up the VPN on your computer. I chose peer_pc1.
 
 4. Change directories into the peer option you choose. I will be using peer_pc1 in my example.
 
-    cd peer_pc1
+        cd peer_pc1
     
 5. List the contents of the peer_pc1 directory
 
-    ls
+        ls
     
 6. Run the following command to view the configuration file
 
-    cat peer_pc1.conf
+        cat peer_pc1.conf
     
 This is what my file looked like:
 
