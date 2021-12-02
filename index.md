@@ -207,9 +207,7 @@ Here is mine as an example:
 
 ### Proof of Phone Installation
 
-![Example Seven](/docs/assets/images/Picture7.PNG)
-![Example Eight](/docs/assets/images/Picture8.PNG)
-![Example Nine](/docs/assets/images/Picture9.PNG)
+![Example Seven](/docs/assets/images/Picture7.2.png)
 
 ### Proof of Computer Installation
 
