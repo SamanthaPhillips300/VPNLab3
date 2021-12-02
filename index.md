@@ -184,21 +184,22 @@ First, download/install the Wireguard application for your computer.
 
         cat peer_pc1.conf
     
-This is what my file looked like:
+    
+    This is what my file looked like:
 
-![Example Four](/docs/assets/images/Picture4.png)
+    ![Example Four](/docs/assets/images/Picture4.png)
 
-NOTE: I deleted the droplet in Digital Ocean right after making this, so that is why I didn't redact the Private/Public key informaton.
+    NOTE: I deleted the droplet in Digital Ocean right after making this, so that is why I didn't redact the Private/Public key informaton.
 
  7. Open your Wireguard application and Add an empty tunnel...
 
-![Example Five](/docs/assets/images/Picture5.png)
+    ![Example Five](/docs/assets/images/Picture5.png)
 
  8. Copy and paste the information from the peer_pc1.conf file into the new tunnel
 
-Here is mine as an example:
+    Here is mine as an example:
 
-![Example Six](/docs/assets/images/Picture6.png)
+    ![Example Six](/docs/assets/images/Picture6.png)
 
  9. Click "Save"
 
