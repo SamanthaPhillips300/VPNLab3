@@ -109,7 +109,7 @@ A few changes will need to be made before you save the .yml file:
 
 - TZ refers to timezone, so you will need to change it based on your timezone. Choose yours from TZ database name from [Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). I chose America/Chicago for my installation.
 - SERVERURL refers to the IP Address of the server you are using. Replace the 1.2.3.4 with whatever the IP address is of your host. My server IP is 104.248.6.164
-- PEERS is the number os user-config-files that are generated when the docker container is created. You can add, remove, and rename the current PEERS options shown. I left mine as the default pc1,pc2,phone1 
+- PEERS is the number of user-config-files that are generated when the docker container is created. You can add, remove, and rename the current PEERS options shown. I left mine as the default pc1,pc2,phone1 
 
 NOTE: The following change is not necessary, but may be helpful
 
@@ -190,17 +190,17 @@ This is what my file looked like:
 
 NOTE: I deleted the droplet in Digital Ocean right after making this, so that is why I didn't redact the Private/Public key informaton.
 
-7. Open your Wireguard application and Add an empty tunnel...
+ 7. Open your Wireguard application and Add an empty tunnel...
 
 ![Example Five](/docs/assets/images/Picture5.png)
 
-8. Copy and paste the information from the peer_pc1.conf file into the new tunnel
+ 8. Copy and paste the information from the peer_pc1.conf file into the new tunnel
 
 Here is mine as an example:
 
 ![Example Six](/docs/assets/images/Picture6.png)
 
-9. Click "Save"
+ 9. Click "Save"
 
 
 ## Appendix
