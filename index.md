@@ -1,37 +1,45 @@
-## Welcome to GitHub Pages
+# Docker VPN Project: Setup Wireguard VPN server using Docker
 
-You can use the [editor on GitHub](https://github.com/SamanthaPhillips300/VPNLab3/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Created by: Samantha Phillips
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Resources:
 
-### Markdown
+[https://thematrix.dev/setup-wireguard-vpn-server-with-docker/](https://thematrix.dev/setup-wireguard-vpn-server-with-docker/)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+NOTE: I used a Ubuntu 20.04 (LTS) 64 droplet on DigitalOcean for this installation process.
 
-```markdown
-Syntax highlighted code block
+## Step 1: Install Docker
 
-# Header 1
-## Header 2
-### Header 3
+Run the following two commands:
 
-- Bulleted
-- List
+    sudo apt update
+    sudo apt install docker.io
+    
+Notes: 
+The first command updates apt, so it is pulling the latest installs from the apt repository.
+The second command installs docker.
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+## Step 2: Install Docker Compose
 
-[Link](url) and ![Image](src)
-```
+First, install curl (if it is not already installed) with the following command:
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+    sudo apt install curl
+  
+So, what is curl? Well, I'm glad you asked. Curl is a command line tool to transfer data to or from a server. We will be using it to install Docker Compose from Github. Docker Compose is a tool that was developed to help define and share multi-container applications.
 
-### Jekyll Themes
+Next, run the following commands to install docker-compose:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SamanthaPhillips300/VPNLab3/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+    sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    sudo chmod +x /usr/local/bin/docker-compose
+    
+The first command is transfering the docker-compose data found on the github site, that is shown in the command. The second command is modifying the permissions of the downloaded docker-compose data by making it able to be executed.   
 
-### Support or Contact
+After docker-compose is finished installing, run the following command to check the installation is successful and the version.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    docker-compose –version
+    
+Here is what my result looked like after running the command:
+
+
+![Example One](/docs/assets/images/Picture1.png)
